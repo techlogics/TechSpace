@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="320" id="KGk-i7-Jjw" customClass="HomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample3.png" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-qV-S8I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JxG-qV-S8I" secondAttribute="height" multiplier="320:171" id="GoL-8R-qhr"/>
+                            <constraint firstAttribute="height" constant="150" id="noT-S2-DeU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="noT-S2-DeU"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Russia To Pay Local Devs To Migrate Apps To Tizen, Sailfish" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU8-Di-c1f">
+                        <rect key="frame" x="8" y="171" width="304" height="40.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8Dp-De-Erg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Dp-De-Erg"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBf-Uw-auw">
+                        <rect key="frame" x="8" y="211" width="304" height="98"/>
+                        <string key="text">The U.S. mobile ecosystem duopoly has been the big story of tech for the past six+ years. And continues to be mobile’s unshakeable reality — with Android and iOS collectively cutting themselves a 96 per cent share of the device market (per Gartner figures for Q3 2014).Not everyone is happy about this lack of geopolitical diversity in the mobile space, though. Russia for one wants to see less U.S.-centricity, at least domestically — and is apparently willing to dip into its pockets to encourage developers to migrate apps to other mobile platforms.</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Crunch" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hi-5m-qfH">
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="aAA-lq-0gI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aAA-lq-0gI"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zBf-Uw-auw" firstAttribute="top" secondItem="JU8-Di-c1f" secondAttribute="bottom" id="0u7-IF-nq9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6hi-5m-qfH" secondAttribute="trailing" id="16t-TG-wI6"/>
+                    <constraint firstItem="JU8-Di-c1f" firstAttribute="top" secondItem="JxG-qV-S8I" secondAttribute="bottom" id="2ab-vd-MhQ"/>
+                    <constraint firstItem="zBf-Uw-auw" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="42O-1i-Heh"/>
+                    <constraint firstItem="zBf-Uw-auw" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4uh-Gz-ewH"/>
+                    <constraint firstItem="zBf-Uw-auw" firstAttribute="top" secondItem="JU8-Di-c1f" secondAttribute="bottom" id="D3Q-5R-Sbj"/>
+                    <constraint firstItem="zBf-Uw-auw" firstAttribute="top" secondItem="JU8-Di-c1f" secondAttribute="bottom" constant="8" id="EIJ-OL-5EE"/>
+                    <constraint firstItem="JU8-Di-c1f" firstAttribute="top" secondItem="JxG-qV-S8I" secondAttribute="bottom" constant="8" id="GRg-ZJ-mWc"/>
+                    <constraint firstItem="6hi-5m-qfH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="H0K-6M-izN"/>
+                    <constraint firstItem="6hi-5m-qfH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="L5p-x1-dte"/>
+                    <constraint firstItem="6hi-5m-qfH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="YZZ-jj-O9E"/>
+                    <constraint firstItem="JxG-qV-S8I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Zch-4L-8E3"/>
+                    <constraint firstItem="JU8-Di-c1f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="am9-s9-YEY"/>
+                    <constraint firstItem="JxG-qV-S8I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="eLo-Zc-keU"/>
+                    <constraint firstItem="zBf-Uw-auw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fMb-Zw-6SX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JxG-qV-S8I" secondAttribute="trailing" constant="-8" id="pSD-LB-CpL"/>
+                    <constraint firstItem="zBf-Uw-auw" firstAttribute="top" secondItem="JU8-Di-c1f" secondAttribute="bottom" id="qmc-br-0QW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zBf-Uw-auw" secondAttribute="bottom" constant="2.5" id="wOH-ig-w13"/>
+                    <constraint firstItem="JU8-Di-c1f" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xHw-Af-H2j"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="YZZ-jj-O9E"/>
+                        <exclude reference="GRg-ZJ-mWc"/>
+                        <exclude reference="0u7-IF-nq9"/>
+                        <exclude reference="42O-1i-Heh"/>
+                        <exclude reference="D3Q-5R-Sbj"/>
+                        <exclude reference="EIJ-OL-5EE"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="topImageView" destination="JxG-qV-S8I" id="1Kd-x2-HlK"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="459"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sample3.png" width="1024" height="576"/>
+    </resources>
+</document>
